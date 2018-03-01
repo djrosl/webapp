@@ -171,7 +171,11 @@ gulp.task('wiredep', () => {
 gulp.task( 'deploy', function () {
 
   var conn = ftp.create( {
-    
+    host:     '',
+    user:     '',
+    password: '',
+    parallel: 10,
+    log:      gutil.log
   } );
 
   var globs = [
