@@ -171,11 +171,7 @@ gulp.task('wiredep', () => {
 gulp.task( 'deploy', function () {
 
   var conn = ftp.create( {
-    host:     'acrux.ml',
-    user:     'gordov',
-    password: 'gordov',
-    parallel: 10,
-    log:      gutil.log
+    
   } );
 
   var globs = [
